@@ -4,6 +4,16 @@ from bs4 import BeautifulSoup
 import pandas as pd
 from datetime import datetime
 
+# %%
+trane_url = 'https://www.tranetechnologies.com/en/index/news.html'
+## works w/ base fetch
+
+##trane_news_url = 'https://investors.tranetechnologies.com/news-and-events/news-releases/default.aspx'
+## doesn't work w/ base fetch
+
+trane_article_url = 'https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2025/Trane-Technologies-to-Acquire-Stellar-Energy-Digital-Business/default.aspx'
+## works w/ base fetch
+
 
 # %% [markdown]
 # ### original base fetch method
@@ -87,7 +97,40 @@ def trane_scrape_article(url):
     split_text = result_text.split('.')
     summary = '.'.join(split_text[:3]) + '.'
 
-    new_row = {'title':title, 'summary':summary, 'dateline':dateline, 'newslinetext':result_text, 'url':url, 'source':'Trane Technologies'}
+    new_row = {'title':title, 'summary':summary, 'dateline':dateline, 'newslinetext':result_text, 'attachmenturl':url, 'source':'Trane Technologies'}
     new_data = pd.concat([new_data, pd.DataFrame([new_row])], ignore_index=True)
     return new_data
+
+
+
+# %% [markdown]
+# # Implementation
+
+# %%
+## scrape homepage url for article links
+temp_soup = trane_fetch_method(trane_url)
+
+# # Find all <a> tags with class newspromo__link
+# links = temp_soup.find_all("a", class_="newspromo__link")
+
+# # Extract href attributes
+# hrefs = [a['href'] for a in links if 'href' in a.attrs]
+
+# # Keep only links that start with https:
+# https_links = [link for link in hrefs if link.startswith("https:")]
+
+
+https_links = trane_url_extraction(temp_soup)
+
+## iterate through article links and scrape each articles data
+
+article_data = pd.DataFrame(columns=['title','summary','dateline','newslinetext','url', 'source'])
+
+for link in https_links:
+    article_data = pd.concat([article_data, trane_scrape_article(link)], ignore_index=True)
+
+# %%
+## write to excel
+article_data.to_excel('Data/trane_news.xlsx', index=False)
+
 
