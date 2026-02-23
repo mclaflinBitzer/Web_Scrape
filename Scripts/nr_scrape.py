@@ -5,6 +5,19 @@ import re
 import pandas as pd
 from datetime import datetime
 
+# %% [markdown]
+# ### Relevant Links for NR
+
+# %%
+nr_url = 'https://naturalrefrigerants.com/news/'
+## seems to work with basic request using headers
+
+# the link below was just used for testing
+# nr_article_url = 'https://naturalrefrigerants.com/news/the-middle-east-is-ready-to-scale-natural-refrigerants-says-epta-middle-east-general-manager/'
+## seems to work with basic request using headers
+
+# %% [markdown]
+# ### HTML scraping method for the base "recent news" page
 
 # %%
 def nr_fetch_method(url):
@@ -77,4 +90,62 @@ def nr_article_scraping_method(link):
     new_data = pd.concat([new_data, pd.DataFrame([new_row])], ignore_index=True)
     return new_data
     
- 
+    
+
+# %%
+
+
+# %%
+
+
+# %% [markdown]
+# ## Implementation
+
+# %% [markdown]
+# ### Extracting Links from base NR URL
+
+# %%
+
+# ## extracting html from base URL w/ list of news articles
+
+# temp_soup = nr_fetch_method(nr_url)
+# for p in temp_soup.find_all("p"):
+#     print(p.get_text())
+
+
+# # Find the div where class contains 'ecs-posts' & extract all links
+# posts_div = temp_soup.find("div", class_=re.compile(r"ecs-posts"))
+
+# if posts_div:
+#     links = [
+#         a["href"]
+#         for a in posts_div.find_all("a", class_=re.compile(r"elementor-button"))
+#         if a.get("href")
+#     ]
+#     print(links)
+# else:
+#     print("No matching div found")
+
+
+# %% [markdown]
+# ### parsing scraped article links & extracting relevant data
+
+# %%
+# ## dataframe defining
+# ## columns: title, summary, publication_date->dateline, article_body->newslinetext, attachmenturl
+# articles_data = pd.DataFrame(columns=['title', 'summary', 'dateline', 'newslinetext', 'attachmenturl'])
+
+
+# deduped_list = list(set(links))
+
+# for link in deduped_list:
+#     articles_data = pd.concat([articles_data, nr_article_scraping_method(link)])
+    
+
+# %% [markdown]
+# ### Writing to excel file
+
+# %%
+# articles_data.to_excel('Data/scraped_natural_refrigerants_news.xlsx', index=False)
+
+

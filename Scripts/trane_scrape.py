@@ -107,30 +107,30 @@ def trane_scrape_article(url):
 # # Implementation
 
 # %%
-## scrape homepage url for article links
-temp_soup = trane_fetch_method(trane_url)
+# ## scrape homepage url for article links
+# temp_soup = trane_fetch_method(trane_url)
 
-# # Find all <a> tags with class newspromo__link
-# links = temp_soup.find_all("a", class_="newspromo__link")
+# # # Find all <a> tags with class newspromo__link
+# # links = temp_soup.find_all("a", class_="newspromo__link")
 
-# # Extract href attributes
-# hrefs = [a['href'] for a in links if 'href' in a.attrs]
+# # # Extract href attributes
+# # hrefs = [a['href'] for a in links if 'href' in a.attrs]
 
-# # Keep only links that start with https:
-# https_links = [link for link in hrefs if link.startswith("https:")]
+# # # Keep only links that start with https:
+# # https_links = [link for link in hrefs if link.startswith("https:")]
 
 
-https_links = trane_url_extraction(temp_soup)
+# https_links = trane_url_extraction(temp_soup)
 
-## iterate through article links and scrape each articles data
+# ## iterate through article links and scrape each articles data
 
-article_data = pd.DataFrame(columns=['title','summary','dateline','newslinetext','url', 'source'])
+# article_data = pd.DataFrame(columns=['title','summary','dateline','newslinetext','url', 'source'])
 
-for link in https_links:
-    article_data = pd.concat([article_data, trane_scrape_article(link)], ignore_index=True)
+# for link in https_links:
+#     article_data = pd.concat([article_data, trane_scrape_article(link)], ignore_index=True)
 
 # %%
-## write to excel
-article_data.to_excel('Data/trane_news.xlsx', index=False)
+# ## write to excel
+# article_data.to_excel('Data/trane_news.xlsx', index=False)
 
 
