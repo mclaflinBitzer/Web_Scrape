@@ -3,6 +3,11 @@ import pandas as pd
 from dotenv import load_dotenv
 import os
 import requests
+import logging
+from Scripts.logger import setup_logger
+
+# %%
+logger = setup_logger(__name__)
 
 # %% [markdown]
 # ### API Push 
@@ -11,13 +16,15 @@ import requests
 def api_push():
     load_dotenv()
 
+    logger.info("Fetching api credentials and keys from .env file")
     api_url = os.getenv("api_url")
     APIid = os.getenv("APIid")
     authKey =  os.getenv("authKey")
     customerGUID = os.getenv("customerGUID")
     accessGroups = os.getenv("accessGroups")
 
-    df = pd.read_excel('Data/compiled_article_data.xlsx')
+    logger.info("Reading compiled article data from excel file")
+    df = pd.read_excel(os.getenv("output_file"))
 
     for index, row in df.iterrows():
         data = {
@@ -36,7 +43,8 @@ def api_push():
         }
 
         r = requests.post(api_url, data=data, verify=False)
-        print(r)
-        print(r.content)
+        logger.info(f"API response status code for article '{row['title']}': {r.status_code} and the content {r.content}")
+        #print(r)
+        #print(r.content)
 
 

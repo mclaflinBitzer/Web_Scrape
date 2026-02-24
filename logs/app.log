@@ -1,0 +1,133 @@
+2026-02-24 14:06:24,490 | INFO | web_scraping_logger | Starting the web scraping pipeline.
+2026-02-24 14:15:47,337 | INFO | web_scraping_logger | test
+2026-02-24 14:16:12,311 | INFO | web_scraping_logger | does this overwrite
+2026-02-24 14:16:26,766 | INFO | web_scraping_logger | does this overwrite
+2026-02-24 14:16:26,766 | INFO | web_scraping_logger | does this overwrite
+2026-02-24 14:42:14,687 | INFO | web_scraping_logger | Starting the web scraping pipeline.
+2026-02-24 14:42:14,687 | INFO | web_scraping_logger | Starting the web scraping pipeline.
+2026-02-24 14:42:25,082 | INFO | web_scraping_logger | fetching base natural refrigerants html from url: https://naturalrefrigerants.com/news/
+2026-02-24 14:42:25,082 | INFO | web_scraping_logger | fetching base natural refrigerants html from url: https://naturalrefrigerants.com/news/
+2026-02-24 14:42:25,767 | INFO | web_scraping_logger | Extracting sub article links from base NR html
+2026-02-24 14:42:25,767 | INFO | web_scraping_logger | Extracting sub article links from base NR html
+2026-02-24 14:42:25,780 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/minnesota-flow-environmental-services-st-paul-local-455-team-up-for-co2-heat-pump-training-and-demonstrations/
+2026-02-24 14:42:25,780 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/minnesota-flow-environmental-services-st-paul-local-455-team-up-for-co2-heat-pump-training-and-demonstrations/
+2026-02-24 14:42:26,103 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/brazil-hvacr-association-presents-proposed-strategy-for-first-phase-of-national-hfc-reduction-program/
+2026-02-24 14:42:26,103 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/brazil-hvacr-association-presents-proposed-strategy-for-first-phase-of-national-hfc-reduction-program/
+2026-02-24 14:42:26,483 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/epta-completes-its-acquisition-of-hauser/
+2026-02-24 14:42:26,483 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/epta-completes-its-acquisition-of-hauser/
+2026-02-24 14:42:27,000 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/bock-co2-compressors-found-to-vibrate-less-at-ohio-supermarket/
+2026-02-24 14:42:27,000 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/bock-co2-compressors-found-to-vibrate-less-at-ohio-supermarket/
+2026-02-24 14:42:27,637 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/guide-to-working-with-propane-available-in-english/
+2026-02-24 14:42:27,637 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/guide-to-working-with-propane-available-in-english/
+2026-02-24 14:42:28,083 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/cencosud-nestle-and-oxxo-colombia-to-present-at-atmo-latam-2026/
+2026-02-24 14:42:28,083 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/cencosud-nestle-and-oxxo-colombia-to-present-at-atmo-latam-2026/
+2026-02-24 14:42:28,706 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/hyting-commissions-worlds-first-customer-installed-catalytic-hydrogen-air-heating-system/
+2026-02-24 14:42:28,706 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/hyting-commissions-worlds-first-customer-installed-catalytic-hydrogen-air-heating-system/
+2026-02-24 14:42:29,094 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/johnson-controls-introduces-air-to-water-reversible-york-yas-r290-heat-pump-models-to-the-european-market/
+2026-02-24 14:42:29,094 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/johnson-controls-introduces-air-to-water-reversible-york-yas-r290-heat-pump-models-to-the-european-market/
+2026-02-24 14:42:31,543 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/part-2-bacs-heat-rejection-and-single-phase-immersion-technology-provide-end-to-end-cooling-solution-for-data-centers/
+2026-02-24 14:42:31,543 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/part-2-bacs-heat-rejection-and-single-phase-immersion-technology-provide-end-to-end-cooling-solution-for-data-centers/
+2026-02-24 14:42:31,979 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/frascolds-new-nexus-screw-compressor-for-high-temperature-heat-pump-applications-can-work-with-butane-and-isopentane/
+2026-02-24 14:42:31,979 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/frascolds-new-nexus-screw-compressor-for-high-temperature-heat-pump-applications-can-work-with-butane-and-isopentane/
+2026-02-24 14:42:32,357 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/trade-groups-appeal-new-york-court-decision-rejecting-effort-to-stop-hfc-regs/
+2026-02-24 14:42:32,357 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/trade-groups-appeal-new-york-court-decision-rejecting-effort-to-stop-hfc-regs/
+2026-02-24 14:42:32,903 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/hvacr-japan-2026-jexsys-launches-130c-high-temperature-hot-water-co2-heat-pump/
+2026-02-24 14:42:32,903 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/hvacr-japan-2026-jexsys-launches-130c-high-temperature-hot-water-co2-heat-pump/
+2026-02-24 14:42:33,353 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/eu-launches-e1-8-million-heat-pump-subscription-model-for-leased-commercial-and-public-buildings/
+2026-02-24 14:42:33,353 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/eu-launches-e1-8-million-heat-pump-subscription-model-for-leased-commercial-and-public-buildings/
+2026-02-24 14:42:34,570 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/advansor-launches-enhanced-cubig-ii-with-50-more-cooling-and-heating-capacity/
+2026-02-24 14:42:34,570 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/advansor-launches-enhanced-cubig-ii-with-50-more-cooling-and-heating-capacity/
+2026-02-24 14:42:35,562 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/part-1-bacs-heat-rejection-and-single-phase-immersion-technology-provide-end-to-end-cooling-solution-for-data-centers/
+2026-02-24 14:42:35,562 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/part-1-bacs-heat-rejection-and-single-phase-immersion-technology-provide-end-to-end-cooling-solution-for-data-centers/
+2026-02-24 14:42:37,034 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/california-grant-of-1-5-million-to-fund-research-on-risk-of-propane-in-outdoor-heat-pumps/
+2026-02-24 14:42:37,034 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/california-grant-of-1-5-million-to-fund-research-on-risk-of-propane-in-outdoor-heat-pumps/
+2026-02-24 14:48:34,325 | INFO | web_scraping_logger | Starting the web scraping pipeline.
+2026-02-24 14:48:34,325 | INFO | web_scraping_logger | Starting the web scraping pipeline.
+2026-02-24 14:48:34,325 | INFO | web_scraping_logger | Starting the web scraping pipeline.
+2026-02-24 14:48:34,401 | INFO | web_scraping_logger | fetching base natural refrigerants html from url: https://naturalrefrigerants.com/news/
+2026-02-24 14:48:34,401 | INFO | web_scraping_logger | fetching base natural refrigerants html from url: https://naturalrefrigerants.com/news/
+2026-02-24 14:48:34,401 | INFO | web_scraping_logger | fetching base natural refrigerants html from url: https://naturalrefrigerants.com/news/
+2026-02-24 14:48:34,977 | INFO | web_scraping_logger | Extracting sub article links from base NR html
+2026-02-24 14:48:34,977 | INFO | web_scraping_logger | Extracting sub article links from base NR html
+2026-02-24 14:48:34,977 | INFO | web_scraping_logger | Extracting sub article links from base NR html
+2026-02-24 14:48:34,985 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/minnesota-flow-environmental-services-st-paul-local-455-team-up-for-co2-heat-pump-training-and-demonstrations/
+2026-02-24 14:48:34,985 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/minnesota-flow-environmental-services-st-paul-local-455-team-up-for-co2-heat-pump-training-and-demonstrations/
+2026-02-24 14:48:34,985 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/minnesota-flow-environmental-services-st-paul-local-455-team-up-for-co2-heat-pump-training-and-demonstrations/
+2026-02-24 14:48:35,486 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/brazil-hvacr-association-presents-proposed-strategy-for-first-phase-of-national-hfc-reduction-program/
+2026-02-24 14:48:35,486 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/brazil-hvacr-association-presents-proposed-strategy-for-first-phase-of-national-hfc-reduction-program/
+2026-02-24 14:48:35,486 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/brazil-hvacr-association-presents-proposed-strategy-for-first-phase-of-national-hfc-reduction-program/
+2026-02-24 14:48:38,244 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/epta-completes-its-acquisition-of-hauser/
+2026-02-24 14:48:38,244 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/epta-completes-its-acquisition-of-hauser/
+2026-02-24 14:48:38,244 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/epta-completes-its-acquisition-of-hauser/
+2026-02-24 14:48:38,720 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/bock-co2-compressors-found-to-vibrate-less-at-ohio-supermarket/
+2026-02-24 14:48:38,720 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/bock-co2-compressors-found-to-vibrate-less-at-ohio-supermarket/
+2026-02-24 14:48:38,720 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/bock-co2-compressors-found-to-vibrate-less-at-ohio-supermarket/
+2026-02-24 14:48:39,194 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/guide-to-working-with-propane-available-in-english/
+2026-02-24 14:48:39,194 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/guide-to-working-with-propane-available-in-english/
+2026-02-24 14:48:39,194 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/guide-to-working-with-propane-available-in-english/
+2026-02-24 14:48:39,600 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/cencosud-nestle-and-oxxo-colombia-to-present-at-atmo-latam-2026/
+2026-02-24 14:48:39,600 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/cencosud-nestle-and-oxxo-colombia-to-present-at-atmo-latam-2026/
+2026-02-24 14:48:39,600 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/cencosud-nestle-and-oxxo-colombia-to-present-at-atmo-latam-2026/
+2026-02-24 14:48:40,044 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/hyting-commissions-worlds-first-customer-installed-catalytic-hydrogen-air-heating-system/
+2026-02-24 14:48:40,044 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/hyting-commissions-worlds-first-customer-installed-catalytic-hydrogen-air-heating-system/
+2026-02-24 14:48:40,044 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/hyting-commissions-worlds-first-customer-installed-catalytic-hydrogen-air-heating-system/
+2026-02-24 14:48:40,413 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/johnson-controls-introduces-air-to-water-reversible-york-yas-r290-heat-pump-models-to-the-european-market/
+2026-02-24 14:48:40,413 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/johnson-controls-introduces-air-to-water-reversible-york-yas-r290-heat-pump-models-to-the-european-market/
+2026-02-24 14:48:40,413 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/johnson-controls-introduces-air-to-water-reversible-york-yas-r290-heat-pump-models-to-the-european-market/
+2026-02-24 14:48:41,004 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/part-2-bacs-heat-rejection-and-single-phase-immersion-technology-provide-end-to-end-cooling-solution-for-data-centers/
+2026-02-24 14:48:41,004 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/part-2-bacs-heat-rejection-and-single-phase-immersion-technology-provide-end-to-end-cooling-solution-for-data-centers/
+2026-02-24 14:48:41,004 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/part-2-bacs-heat-rejection-and-single-phase-immersion-technology-provide-end-to-end-cooling-solution-for-data-centers/
+2026-02-24 14:48:41,413 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/frascolds-new-nexus-screw-compressor-for-high-temperature-heat-pump-applications-can-work-with-butane-and-isopentane/
+2026-02-24 14:48:41,413 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/frascolds-new-nexus-screw-compressor-for-high-temperature-heat-pump-applications-can-work-with-butane-and-isopentane/
+2026-02-24 14:48:41,413 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/frascolds-new-nexus-screw-compressor-for-high-temperature-heat-pump-applications-can-work-with-butane-and-isopentane/
+2026-02-24 14:48:41,903 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/trade-groups-appeal-new-york-court-decision-rejecting-effort-to-stop-hfc-regs/
+2026-02-24 14:48:41,903 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/trade-groups-appeal-new-york-court-decision-rejecting-effort-to-stop-hfc-regs/
+2026-02-24 14:48:41,903 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/trade-groups-appeal-new-york-court-decision-rejecting-effort-to-stop-hfc-regs/
+2026-02-24 14:48:42,327 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/hvacr-japan-2026-jexsys-launches-130c-high-temperature-hot-water-co2-heat-pump/
+2026-02-24 14:48:42,327 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/hvacr-japan-2026-jexsys-launches-130c-high-temperature-hot-water-co2-heat-pump/
+2026-02-24 14:48:42,327 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/hvacr-japan-2026-jexsys-launches-130c-high-temperature-hot-water-co2-heat-pump/
+2026-02-24 14:48:42,658 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/eu-launches-e1-8-million-heat-pump-subscription-model-for-leased-commercial-and-public-buildings/
+2026-02-24 14:48:42,658 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/eu-launches-e1-8-million-heat-pump-subscription-model-for-leased-commercial-and-public-buildings/
+2026-02-24 14:48:42,658 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/eu-launches-e1-8-million-heat-pump-subscription-model-for-leased-commercial-and-public-buildings/
+2026-02-24 14:48:43,001 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/advansor-launches-enhanced-cubig-ii-with-50-more-cooling-and-heating-capacity/
+2026-02-24 14:48:43,001 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/advansor-launches-enhanced-cubig-ii-with-50-more-cooling-and-heating-capacity/
+2026-02-24 14:48:43,001 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/advansor-launches-enhanced-cubig-ii-with-50-more-cooling-and-heating-capacity/
+2026-02-24 14:48:43,490 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/part-1-bacs-heat-rejection-and-single-phase-immersion-technology-provide-end-to-end-cooling-solution-for-data-centers/
+2026-02-24 14:48:43,490 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/part-1-bacs-heat-rejection-and-single-phase-immersion-technology-provide-end-to-end-cooling-solution-for-data-centers/
+2026-02-24 14:48:43,490 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/part-1-bacs-heat-rejection-and-single-phase-immersion-technology-provide-end-to-end-cooling-solution-for-data-centers/
+2026-02-24 14:48:43,868 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/california-grant-of-1-5-million-to-fund-research-on-risk-of-propane-in-outdoor-heat-pumps/
+2026-02-24 14:48:43,868 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/california-grant-of-1-5-million-to-fund-research-on-risk-of-propane-in-outdoor-heat-pumps/
+2026-02-24 14:48:43,868 | INFO | web_scraping_logger | Scraping article data from link: https://naturalrefrigerants.com/news/california-grant-of-1-5-million-to-fund-research-on-risk-of-propane-in-outdoor-heat-pumps/
+2026-02-24 14:48:44,358 | INFO | web_scraping_logger | fetching base Trane html from url: https://www.tranetechnologies.com/en/index/news.html
+2026-02-24 14:48:44,358 | INFO | web_scraping_logger | fetching base Trane html from url: https://www.tranetechnologies.com/en/index/news.html
+2026-02-24 14:48:44,358 | INFO | web_scraping_logger | fetching base Trane html from url: https://www.tranetechnologies.com/en/index/news.html
+2026-02-24 14:48:45,068 | INFO | web_scraping_logger | Extracting sub article links from base Trane html
+2026-02-24 14:48:45,068 | INFO | web_scraping_logger | Extracting sub article links from base Trane html
+2026-02-24 14:48:45,068 | INFO | web_scraping_logger | Extracting sub article links from base Trane html
+2026-02-24 14:48:45,076 | INFO | web_scraping_logger | Scraping article data from link: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-Completes-Acquisition-of-Stellar-Energy/default.aspx
+2026-02-24 14:48:45,076 | INFO | web_scraping_logger | Scraping article data from link: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-Completes-Acquisition-of-Stellar-Energy/default.aspx
+2026-02-24 14:48:45,076 | INFO | web_scraping_logger | Scraping article data from link: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-Completes-Acquisition-of-Stellar-Energy/default.aspx
+2026-02-24 14:48:45,871 | INFO | web_scraping_logger | Scraping article data from link: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-to-Acquire-LiquidStack-to-Accelerate-EndtoEnd-Data-Center-Thermal-Management-Solutions/default.aspx
+2026-02-24 14:48:45,871 | INFO | web_scraping_logger | Scraping article data from link: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-to-Acquire-LiquidStack-to-Accelerate-EndtoEnd-Data-Center-Thermal-Management-Solutions/default.aspx
+2026-02-24 14:48:45,871 | INFO | web_scraping_logger | Scraping article data from link: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-to-Acquire-LiquidStack-to-Accelerate-EndtoEnd-Data-Center-Thermal-Management-Solutions/default.aspx
+2026-02-24 14:48:46,437 | INFO | web_scraping_logger | Scraping article data from link: https://www.3blmedia.com/news/reuben-trane-named-2026-class-national-inventors-hall-fame
+2026-02-24 14:48:46,437 | INFO | web_scraping_logger | Scraping article data from link: https://www.3blmedia.com/news/reuben-trane-named-2026-class-national-inventors-hall-fame
+2026-02-24 14:48:46,437 | INFO | web_scraping_logger | Scraping article data from link: https://www.3blmedia.com/news/reuben-trane-named-2026-class-national-inventors-hall-fame
+2026-02-24 14:48:47,712 | INFO | web_scraping_logger | Scraping article data from link: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-to-Present-at-the-Barclays-Industrial-Select-Conference/default.aspx
+2026-02-24 14:48:47,712 | INFO | web_scraping_logger | Scraping article data from link: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-to-Present-at-the-Barclays-Industrial-Select-Conference/default.aspx
+2026-02-24 14:48:47,712 | INFO | web_scraping_logger | Scraping article data from link: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-to-Present-at-the-Barclays-Industrial-Select-Conference/default.aspx
+2026-02-24 14:48:48,230 | INFO | web_scraping_logger | Scraping article data from link: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-to-Present-at-the-Citi-Global-Industrial-Tech-and-Mobility-Conference/default.aspx
+2026-02-24 14:48:48,230 | INFO | web_scraping_logger | Scraping article data from link: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-to-Present-at-the-Citi-Global-Industrial-Tech-and-Mobility-Conference/default.aspx
+2026-02-24 14:48:48,230 | INFO | web_scraping_logger | Scraping article data from link: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-to-Present-at-the-Citi-Global-Industrial-Tech-and-Mobility-Conference/default.aspx
+2026-02-24 14:48:48,741 | INFO | web_scraping_logger | Scraping article data from link: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-Increases-Dividend-by-12-Declares-Quarterly-Dividend/default.aspx
+2026-02-24 14:48:48,741 | INFO | web_scraping_logger | Scraping article data from link: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-Increases-Dividend-by-12-Declares-Quarterly-Dividend/default.aspx
+2026-02-24 14:48:48,741 | INFO | web_scraping_logger | Scraping article data from link: https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-Increases-Dividend-by-12-Declares-Quarterly-Dividend/default.aspx
+2026-02-24 14:48:49,319 | INFO | web_scraping_logger | Web scraping and data compilation complete. saving compiled data to excel file.
+2026-02-24 14:48:49,319 | INFO | web_scraping_logger | Web scraping and data compilation complete. saving compiled data to excel file.
+2026-02-24 14:48:49,319 | INFO | web_scraping_logger | Web scraping and data compilation complete. saving compiled data to excel file.
+2026-02-24 14:48:50,433 | INFO | web_scraping_logger | Initiating the api push process
+2026-02-24 14:48:50,433 | INFO | web_scraping_logger | Initiating the api push process
+2026-02-24 14:48:50,433 | INFO | web_scraping_logger | Initiating the api push process
+2026-02-24 14:56:29,609 | INFO | web_scraping_logger | Starting the web scraping pipeline.
+2026-02-24 14:56:29,609 | INFO | web_scraping_logger | Starting the web scraping pipeline.
+2026-02-24 14:56:29,609 | INFO | web_scraping_logger | Starting the web scraping pipeline.
