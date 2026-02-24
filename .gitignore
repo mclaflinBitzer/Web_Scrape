@@ -2,3 +2,4 @@ venv/
 Data/
 *.pdf
 .env
+*.log
