@@ -6,9 +6,6 @@ import requests
 import logging
 from Scripts.logger import setup_logger
 
-# %%
-logger = setup_logger(__name__)
-
 # %% [markdown]
 # ### API Push 
 
@@ -44,6 +41,8 @@ def api_push():
 
         r = requests.post(api_url, data=data, verify=False)
         logger.info(f"API response status code for article '{row['title']}': {r.status_code} and the content {r.content}")
+        if r.status_code != 200:
+            logger.error(f"Failed to push article '{row['title']}' to API. Status code: {r.status_code}, Response: {r.content}")
         #print(r)
         #print(r.content)
 

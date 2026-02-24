@@ -7,9 +7,6 @@ from datetime import datetime
 import logging
 from Scripts.logger import setup_logger
 
-# %%
-logger = setup_logger(__name__)
-
 # %% [markdown]
 # ### Relevant Links for NR
 
@@ -35,7 +32,6 @@ def nr_fetch_method(url):
     }
     try:
         response = requests.get(url, headers=headers, verify=False, timeout=30)
-        print(response.status_code)
         html_doc = response.text
         soup = BeautifulSoup(html_doc, 'html.parser')
         return soup
@@ -71,7 +67,6 @@ def nr_url_extraction(temp_soup):
 def nr_article_scraping_method(link):
     article_html = nr_fetch_method(link)
 
-    new_data = pd.DataFrame(columns=['title', 'summary', 'dateline', 'newslinetext', 'attachmenturl','source'])
 
     title = article_html.find("h2", class_=re.compile(r"elementor-heading-title")).get_text()
 

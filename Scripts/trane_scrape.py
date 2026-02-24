@@ -7,9 +7,6 @@ import logging
 from Scripts.logger import setup_logger
 
 # %%
-logger = setup_logger(__name__)
-
-# %%
 trane_url = 'https://www.tranetechnologies.com/en/index/news.html'
 ## works w/ base fetch
 
@@ -34,7 +31,6 @@ def trane_fetch_method(url):
     }
     try:
         response = requests.get(url, headers=headers, verify=False, timeout=30)
-        print(response.status_code)
         html_doc = response.text
         soup = BeautifulSoup(html_doc, 'html.parser')
         return soup
