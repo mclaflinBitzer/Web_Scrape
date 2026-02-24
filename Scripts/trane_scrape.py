@@ -3,6 +3,11 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 from datetime import datetime
+import logging
+from Scripts.logger import setup_logger
+
+# %%
+logger = setup_logger(__name__)
 
 # %%
 trane_url = 'https://www.tranetechnologies.com/en/index/news.html'
@@ -27,11 +32,15 @@ def trane_fetch_method(url):
             "Chrome/123.0.0.0 Safari/537.36"
         )
     }
-    response = requests.get(url, headers=headers, verify=False, timeout=30)
-    print(response.status_code)
-    html_doc = response.text
-    soup = BeautifulSoup(html_doc, 'html.parser')
-    return soup
+    try:
+        response = requests.get(url, headers=headers, verify=False, timeout=30)
+        print(response.status_code)
+        html_doc = response.text
+        soup = BeautifulSoup(html_doc, 'html.parser')
+        return soup
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Error fetching URL {url}: {e}")
+        return None
 
 # %% [markdown]
 # ### Extract htmls
@@ -53,10 +62,8 @@ def trane_url_extraction(temp_soup):
 
 # %%
 def trane_scrape_article(url):
-    print(url)
+    
     soup = trane_fetch_method(url)
-
-    new_data = pd.DataFrame(columns=['title','summary','dateline','newslinetext','url','source'])
 
     ## extract title
     title=soup.find('h3').get_text().strip()
@@ -70,38 +77,48 @@ def trane_scrape_article(url):
     ## extract date
     dateline = None
 
+    # 1️⃣ Try main module date
     try:
-        date_text=soup.find("span", class_="module_date-text").get_text().strip()
-        dateline = datetime.strptime(date_text, '%b %d, %Y')
+        date_text = soup.find("span", class_="module_date-text").get_text(strip=True)
+        dateline = datetime.strptime(date_text, '%B %d, %Y')
     except Exception:
-        ## fallback to span value
+        pass
+
+    # 2️⃣ Fallback to <span class="value">
+    if dateline is None:
         spans = soup.find_all("span", class_="value")
-
         for span in spans:
-            text = span.get_text(strip=True)  # extract text from each span
-
-            try:
-                dateline = datetime.strptime(text, '%b %d, %Y')
-                break  # exit loop if date is found
-            except ValueError:
-                pass
-            try:
-                text_clean = text.replace(" ET", "")  # remove timezone suffix
-                dateline = datetime.strptime(text_clean, "%b %d, %Y %I:%M %p")
+            text = span.get_text(strip=True)
+            # Try multiple formats
+            for fmt in ("%b %d, %Y %I:%M %p", "%b %d, %Y", "%B %d, %Y %I:%M %p", "%B %d, %Y"):
+                try:
+                    text_clean = text.replace(" ET", "")
+                    dateline = datetime.strptime(text_clean, fmt)
+                    break
+                except ValueError:
+                    continue
+            if dateline is not None:
                 break
-            except ValueError:
-                pass
+
+    # 3️⃣ Default to now if still None
     if dateline is None:
         dateline = datetime.now()
+
+    # Ensure standard format: YYYY-MM-DD HH:MM:SS
+    dateline = dateline.replace(microsecond=0)
 
     split_text = result_text.split('.')
     summary = '.'.join(split_text[:3]) + '.'
 
-    new_row = {'title':title, 'summary':summary, 'dateline':dateline, 'newslinetext':result_text, 'attachmenturl':url, 'source':'Trane Technologies'}
-    new_data = pd.concat([new_data, pd.DataFrame([new_row])], ignore_index=True)
-    return new_data
-
-
+    article = {
+        'title': title,
+        'summary': summary,
+        'dateline': dateline, 
+        'newslinetext': result_text,
+        'attachmenturl': url,
+        'source': 'Trane Technologies'
+    }
+    return article 
 
 # %% [markdown]
 # # Implementation

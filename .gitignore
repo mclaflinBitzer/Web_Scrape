@@ -3,3 +3,6 @@ Data/
 *.pdf
 .env
 *.log
+*.xlsx
+Scripts/__pycache__/
+*.log

@@ -4,6 +4,11 @@ from bs4 import BeautifulSoup
 import re
 import pandas as pd
 from datetime import datetime
+import logging
+from Scripts.logger import setup_logger
+
+# %%
+logger = setup_logger(__name__)
 
 # %% [markdown]
 # ### Relevant Links for NR
@@ -28,11 +33,15 @@ def nr_fetch_method(url):
             "Chrome/123.0.0.0 Safari/537.36"
         )
     }
-    response = requests.get(url, headers=headers, verify=False, timeout=30)
-    print(response.status_code)
-    html_doc = response.text
-    soup = BeautifulSoup(html_doc, 'html.parser')
-    return soup
+    try:
+        response = requests.get(url, headers=headers, verify=False, timeout=30)
+        print(response.status_code)
+        html_doc = response.text
+        soup = BeautifulSoup(html_doc, 'html.parser')
+        return soup
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Error fetching URL {url}: {e}")
+        return None
 
 # %% [markdown]
 # ### Extract links from base NR URL
@@ -86,17 +95,17 @@ def nr_article_scraping_method(link):
     article_body = content_html.get_text().strip()
     article_body = article_body.split("Atricle previews")[0].strip()
 
-    new_row = {'title':title, 'summary':shortened_sum, 'dateline':dateline, 'newslinetext':article_body, 'attachmenturl':link, 'source':'Natural Refrigerants'}
-    new_data = pd.concat([new_data, pd.DataFrame([new_row])], ignore_index=True)
-    return new_data
+    article = {
+        'title': title,
+        'summary': shortened_sum,
+        'dateline': dateline,
+        'newslinetext': article_body,
+        'attachmenturl': link,
+        'source': 'Natural Refrigerants'
+    }
+    return article
     
     
-
-# %%
-
-
-# %%
-
 
 # %% [markdown]
 # ## Implementation
