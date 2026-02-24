@@ -22,7 +22,7 @@ nr_url = 'https://naturalrefrigerants.com/news/'
 # ### HTML scraping method for the base "recent news" page
 
 # %%
-def nr_fetch_method(url):
+def nr_fetch_method(url, logger):
     headers = {
         "User-Agent": (
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "

@@ -10,7 +10,7 @@ from Scripts.logger import setup_logger
 # ### API Push 
 
 # %%
-def api_push():
+def api_push(logger):
     load_dotenv()
 
     logger.info("Fetching api credentials and keys from .env file")

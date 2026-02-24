@@ -21,7 +21,7 @@ trane_article_url = 'https://investors.tranetechnologies.com/news-and-events/new
 # ### original base fetch method
 
 # %%
-def trane_fetch_method(url):
+def trane_fetch_method(url, logger):
     headers = {
         "User-Agent": (
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
