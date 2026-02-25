@@ -57,9 +57,9 @@ def trane_url_extraction(temp_soup):
 # ### Trane article scraping method
 
 # %%
-def trane_scrape_article(url):
+def trane_scrape_article(url,logger):
     
-    soup = trane_fetch_method(url)
+    soup = trane_fetch_method(url,logger)
 
     ## extract title
     title=soup.find('h3').get_text().strip()

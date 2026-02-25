@@ -64,8 +64,8 @@ def nr_url_extraction(temp_soup):
 # ### Scraping method to extract article data from each articles link previously extracted
 
 # %%
-def nr_article_scraping_method(link):
-    article_html = nr_fetch_method(link)
+def nr_article_scraping_method(link,logger):
+    article_html = nr_fetch_method(link,logger)
 
 
     title = article_html.find("h2", class_=re.compile(r"elementor-heading-title")).get_text()
