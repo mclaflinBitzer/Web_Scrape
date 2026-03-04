@@ -241,13 +241,3 @@ Pipeline execution order:
 5. Push to API
 
 ---
-
-# ⚠️ Notes & Considerations
-
-### Error Handling
-
-* Date parsing includes fallback logic
-* Missing publication dates default to current datetime
-* No retry logic implemented for failed API calls
-
----
